@@ -27,6 +27,7 @@ namespace wpf_MVVM_EntityFramework
     {
         public MainWindow()
         {
+            #region test
             this.DataContext = new Entitys();
             List<Report> r = new List<Report>()
         {
@@ -86,14 +87,29 @@ namespace wpf_MVVM_EntityFramework
             while (flag)
                 {
 
-                // flag = bl.RemoveDrop(d.Drop_Id);
-                //d.Drop_Id++;
+                flag = bl.RemoveDrop(d.Drop_Id);
+                d.Drop_Id++;
                 
                 }
 
-            
+            #endregion
             InitializeComponent();
-           
+            
+
+        }
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new UserControls.AnalistPanel();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new UserControls.DropsMap();
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+           Main.Content = new UserControls.CollerCenter();
         }
     }
 }
