@@ -111,6 +111,17 @@ namespace wpf_MVVM_EntityFramework
         {
            Main.Content = new UserControls.CollerCenter();
         }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new UserControls.C1maps();
+
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+        
+        }
     }
 }
     
