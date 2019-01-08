@@ -293,6 +293,9 @@
     <Compile Include="UserControls\DropsMap.xaml.cs">
       <DependentUpon>DropsMap.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\loginPanel.xaml.cs">
+      <DependentUpon>loginPanel.xaml</DependentUpon>
+    </Compile>
     <Compile Include="windows_\maps.xaml.cs">
       <DependentUpon>maps.xaml</DependentUpon>
     </Compile>
@@ -321,6 +324,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControls\DropsMap.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\loginPanel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -393,6 +400,12 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UserControls\23228.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UserControls\vicon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\ThinkGeo.MapSuite.10.4.0\build\net45\ThinkGeo.MapSuite.targets" Condition="Exists('..\packages\ThinkGeo.MapSuite.10.4.0\build\net45\ThinkGeo.MapSuite.targets')" />
