@@ -69,14 +69,14 @@ namespace wpf_MVVM_EntityFramework
 
             };
             BL_imp bl = new BL_imp();
-            //for(int i=0;i<100;i++)
+            //for (int i = 0; i < 100; i++)
             //{
-            //     Random random = new Random();
-                
+            //    Random random = new Random();
+
             //    const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
             //    string random_Drop_Adress = new string(Enumerable.Repeat(chars, 8)
             //    .Select(s => s[random.Next(s.Length)]).ToArray());
-                
+
             //    bl.AddDrop(d);
             //    d.Drop_Adress = random_Drop_Adress;
             //    d.Drop_Id++;
@@ -120,7 +120,8 @@ namespace wpf_MVVM_EntityFramework
 
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
-        
+            Main.Content = new UserControls.loginPanel();
+
         }
     }
 }
